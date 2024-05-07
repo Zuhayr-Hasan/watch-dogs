@@ -1,0 +1,54 @@
+/* styles.css */
+
+/* Heading Button Gradient */
+.text-gradient {
+    background: linear-gradient(-90deg, #530c76 , #C553ED , #ED62B1, #FFA234);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* text-fill-color: transparent; */
+}
+
+/* Authentication Inputs */
+.form-input {
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-input:focus {
+    border-color: blue;
+    box-shadow: 0 0 0 2px rgba(0, 113, 245, 0.3);
+}
+
+.button-auth-gradient {
+    /* background: linear-gradient(to right, #08000C, #C553ED, #ED62B1, #FFA234); */
+    background: linear-gradient(to right, #FFA234, #ED62B1, #C553ED, #08000C);
+}
+
+ /* Or Sperator Auth Pages */
+.or-separator {
+    position: relative;
+    color: #4B5563;
+    /* Gray-600 from Tailwind palette */
+    padding: 0 10px;
+}
+
+.or-separator::before,
+.or-separator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 165px;
+    height: 1px;
+    background-color: #D1D5DB;
+    /* Gray-300 from Tailwind palette */
+}
+
+.or-separator::before {
+    right: 100%;
+    margin-right: 10px;
+}
+
+.or-separator::after {
+    left: 100%;
+    margin-left: 10px;
+}
