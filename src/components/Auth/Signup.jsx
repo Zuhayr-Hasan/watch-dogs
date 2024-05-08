@@ -1,11 +1,17 @@
 // import React from 'react'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaMicrosoft } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
 import Logo from "../../assets/logo.png";
 import "../../App.css";
 
 export default function Signup() {
+  const navigate = useNavigate();
+
+  const handleVerification = () => {
+    navigate("/varification");
+  };
+  
   return (
     <div>
       <div className="min-h-screen flex items-center justify-center bg-[#fff]">
@@ -51,7 +57,10 @@ export default function Signup() {
               <div className="or-separator text-sm">OR</div>
             </div>
             <div className="mt-4">
-              <button className="w-full flex items-center justify-start py-3 px-4 border border-gray-300 shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50">
+              <button
+                onClick={handleVerification}
+                className="w-full flex items-center justify-start py-3 px-4 border border-gray-300 shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50"
+              >
                 <FaMicrosoft className="h-5 w-5 mr-2" />
                 Continue with Google
               </button>

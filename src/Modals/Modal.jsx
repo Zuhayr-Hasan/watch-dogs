@@ -1,5 +1,6 @@
 // import React from "react";
 import Modal from "react-modal";
+import ModalImage from "../assets/modal-card-image.png";
 
 const customStyles = {
   content: {
@@ -35,7 +36,7 @@ function CustomModal({ modalIsOpen, closeModal }) {
       <div className="z-10 space-y-3">
         {/* Image at the top */}
         <img
-          src="src/assets/modal-card-image.png"
+          src={ModalImage}
           alt="Top Image"
           className="border-2 w-full h-40 object-cover"
         />
@@ -69,12 +70,14 @@ function CustomModal({ modalIsOpen, closeModal }) {
         </ul>
 
         {/* Continue Button */}
-        <button
-          className="px-10 w-full bg-black text-white py-2 rounded hover:bg-gray-900 transition duration-300 ease-in-out"
-          onClick={closeModal} // Assuming you want to close the modal on button click
-        >
-          Continue
-        </button>
+        <div className="px-8">
+          <button
+            className="w-full bg-black text-white py-2 rounded hover:bg-gray-700 transition duration-300 ease-in-out"
+            onClick={closeModal} // Assuming you want to close the modal on button click
+          >
+            Continue
+          </button>
+        </div>
 
         {/* Footer */}
         <p className="text-center text-sm text-gray-500 px-10 pb-5">

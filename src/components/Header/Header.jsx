@@ -55,10 +55,15 @@ const Navbar = () => {
             className={`md:flex ${isMenuOpen ? "block" : "hidden"} flex-grow`}
           >
             <div className="flex flex-col md:flex-row items-center ml-[5rem] w-full">
-              <p className="text-[#fff] cursor-pointer" onClick={handleSearch}>
+              <p
+                className="text-[#fff] hover:text-[#FFA234] cursor-pointer"
+                onClick={handleSearch}
+              >
                 Search
               </p>
-              <p className="ml-[3rem] text-[#fff]">What is WatchDogs?</p>
+              <p className="cursor-pointer ml-[3rem] text-[#fff] hover:text-[#FFA234]">
+                What is WatchDogs?
+              </p>
             </div>
           </div>
           <div className={`md:flex ${isMenuOpen ? "block" : "hidden"}`}>

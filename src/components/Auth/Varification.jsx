@@ -1,13 +1,10 @@
 // import React, { useState } from "react";
+import Logo from "../../assets/logo.png";
 
 export default function Varification() {
-  // const handleResendEmail = () => {
-  //   console.log("email send!!!");
-  // };
-
   return (
     <div className="min-h-screen bg-[#fff] flex flex-col items-center justify-center">
-      <img className="absolute top-10" src="src/assets/logo.png" alt="logo" />
+      <img className="absolute top-10" src={Logo} alt="logo" />
       <div className="bg-white p-8 rounded-lg max-w-md w-full">
         <h1 className="text-2xl font-bold text-gray-900 mb-4 text-center">
           Verify your email
