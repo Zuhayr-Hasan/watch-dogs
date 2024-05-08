@@ -39,7 +39,7 @@ function ResponsiveButton({ onClose }) {
           //   onClick={handleWatchDogs}
           className="cursor-pointer text-gradient font-chakra mt-3 font-bold text-2xl"
         >
-          Sign Up <span className="text-lg">(Get 10 extra search credits)</span>
+          Sign Up
         </p>
         {/* Additional menu items here */}
       </div>

@@ -2,13 +2,14 @@
 import { Link } from "react-router-dom";
 import { FaMicrosoft } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
+import Logo from "../../assets/logo.png";
 import "../../App.css";
 
 export default function Signup() {
   return (
     <div>
       <div className="min-h-screen flex items-center justify-center bg-[#fff]">
-        <img className="absolute top-7" src="src/assets/logo.png" alt="logo" />
+        <img className="absolute top-7" src={Logo} alt="logo" />
         <div className="bg-white p-8 rounded-lg max-w-md w-full mt-10">
           <h1 className="text-2xl text-bold text-center font-bold">
             Create your account

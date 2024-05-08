@@ -52,3 +52,9 @@
     left: 100%;
     margin-left: 10px;
 }
+
+/* Navigation background gradients */
+
+.bg-lineargradient {
+    background: linear-gradient(185deg, rgba(255, 196, 46, 0.99) 9.47%, #AD27FF 38.95%, #511278 51.84%, #000000 82.54%);
+}

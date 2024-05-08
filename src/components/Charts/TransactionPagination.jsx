@@ -66,7 +66,7 @@ const TransactionPagination = ({ data, itemsPerPage = 10 }) => {
           <tbody>{renderTableData()}</tbody>
         </table>
       </div>
-      <div className="flex gap-x-3 justify-end pr-10 pt-24">
+      <div className="flex gap-x-3 justify-center lg:justify-end lg:pr-10 lg:pt-24 pt-10 pr-0">
         <button
           onClick={() => handleClick(1)}
           className="text-white h-[39px] w-[53px] font-semibold hover:bg-[#434044] bg-[#5A555B] rounded-lg text-xs"
@@ -109,39 +109,39 @@ const Transaction = () => {
   const people = [
     {
       hash: "0x123Hei0001223dju...",
-      data: "15 days 4 hrs ago",
+      data: "14 days 2 hrs ago",
       from: "Null Address: 0x00...00",
       to: "0x45ty7632skjdbcbu...",
       tokenId: "3",
       pl: "None",
-      type: "ERC-721",
+      type: "ERC-751",
     },
     {
       hash: "0x123Hei0001223dju...",
-      data: "15 days 4 hrs ago",
+      data: "10 days 4 hrs ago",
       from: "Null Address: 0x00...00",
       to: "0x45ty7632skjdbcbu...",
-      tokenId: "10",
+      tokenId: "13",
       pl: "None",
-      type: "ERC-721",
+      type: "ERC-821",
     },
     {
       hash: "0x123Hei0001223dju...",
-      data: "15 days 4 hrs ago",
+      data: "15 days 22 hrs ago",
       from: "Null Address: 0x00...00",
       to: "0x45ty7632skjdbcbu...",
       tokenId: "5",
       pl: "None",
-      type: "ERC-721",
+      type: "ERC-900",
     },
     {
       hash: "0x123Hei0001223dju...",
-      data: "15 days 4 hrs ago",
+      data: "24 days 4 hrs ago",
       from: "Null Address: 0x00...00",
       to: "0x45ty7632skjdbcbu...",
-      tokenId: "145",
+      tokenId: "245",
       pl: "None",
-      type: "ERC-721",
+      type: "ERC-621",
     },
     {
       hash: "0x123Hei0001223dju...",

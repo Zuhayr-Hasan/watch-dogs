@@ -2,6 +2,7 @@ import { useState } from "react";
 import { BsThreeDots, BsList } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import ResponsiveButton from "./ResponsiveButton";
+import Logo from "../../assets/logo.png";
 import "../../App.css";
 
 const Navbar = () => {
@@ -31,17 +32,22 @@ const Navbar = () => {
     console.log("Hello");
   };
 
+  const onClose = () => {
+    setIsMenuOpen(false);
+    console.log("On close button called");
+  };
+
   return (
     <div className="font-sans flex flex-col md:flex-row">
       {isMenuOpen ? (
-        <ResponsiveButton />
+        <ResponsiveButton onClose={onClose} />
       ) : (
-        <nav className="pt-2 pb-2 flex justify-between w-full px-10 bg-[#000]">
+        <nav className="bg-lineargradient pt-2 pb-2 flex justify-between w-full px-10 bg-[#000]">
           <div className="flex items-center justify-between w-full md:w-auto">
-            <div className="flex items-center">
-              <img src="src/assets/logo.png" className="h-13" alt="logo" />
+            <div className="w-full flex items-center justify-between">
+              <img src={Logo} className="h-13" alt="logo" />
               <button className="text-3xl p-3 md:hidden" onClick={toggleMenu}>
-                  <BsList style={{ color: "#fff"}}/>
+                <BsList style={{ color: "#fff" }} />
               </button>
             </div>
           </div>
@@ -81,11 +87,7 @@ const Navbar = () => {
                         <p className="pl-3">Anonymous..</p>
                         <div className="mt-3 flex justify-between px-3">
                           <div className="flex">
-                            <img
-                              className="h-4 mt-1"
-                              src="src/assets/logo.png"
-                              alt="logo"
-                            />
+                            <img className="h-4 mt-1" src={Logo} alt="logo" />
                             <p className="ml-1 text-sm">10</p>
                           </div>
                           <button className="text-sm bg-[#CCCCCC] rounded-md p-1 px-2">
