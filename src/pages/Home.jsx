@@ -25,7 +25,7 @@ export default function Home() {
     <div className="bg-primary h-screen">
       <Header />
       <div className="relative h-[79.1vh]">
-        <h1 className="font-chakra font-extrabold mt-12 text-center text-5xl lg:text-7xl text-[#fff]">
+        <h1 className="font-chakra font-extrabold mt-12 text-center text-5xl lg:text-7xl text-[#fff] animate-fadeInUp">
           <span className="text-gradient">WATCH</span>DOGS
         </h1>
         <h3 className="mt-3 text-xl text-center text-[#fff] z-100">

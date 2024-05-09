@@ -22,6 +22,9 @@ export default {
       boxShadow: {
         custom: "0px 2px 5px #aaa",
       },
+      animation: {
+        fadeInUp: "fadeInUp 2s ease-out",
+      },
     },
   },
   plugins: [],
